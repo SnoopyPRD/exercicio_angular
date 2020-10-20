@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularPilha';
+  livros = [];
+  onLivroAdicionado(livro) {
+    this.livros = [...this.livros, livro];
+    }
 }
